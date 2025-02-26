@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Startly",
+    "version": "1.0.0",
+    "description": "Startly is an extension for Chrome that improves the look and functionality of the new tab. Startly • Made by Flamevel on Github.",
+    "permissions": ["tabs", "activeTab", "storage"],  
+    "background": {
+        "service_worker": "src/js/script.js"
+    },
+    "chrome_url_overrides": {
+        "newtab": "views/newtab.html"
+    },
+    "host_permissions": [],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+    },
+    "icons": {
+        "16": "views/favicon/startly-favicon-16x16.png",
+        "32": "views/favicon/startly-favicon-32x32.png",
+        "48": "views/favicon/startly-favicon-48x48.png",
+        "128": "views/favicon/startly-favicon-128x128.png"
+    }
+}

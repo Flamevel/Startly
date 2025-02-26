@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startly</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/startly-favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/startly-favicon-16x16.png">
+</head>
+<body>
+    <div class="overlay">
+        <p class="time" id="time">9:41</p>
+        <p class="date" id="date">Tuesday, June 4</p>
+        <p class="greeting" id="greeting">Good Afternoon</p>
+        <p class="daily-qoutes" id="daily-qoutes">Dreams come true one day. ~ Flamevel</p>
+        <!-- <p class="weather" id="weather">Partly Cloudy</p> -->
+        <!-- <p class="weather-icon" id="weather-icon">☁️ 23°</p> -->
+    </div>
+
+    <div class="shortcuts-bar" id="shortcuts-bar"></div>
+    <div class="settings" id="settings-button">⚙️</div>
+
+    <div id="settings-panel">
+        <h3>Personalized Greeting</h3>
+        <input type="text" id="greeting-name" placeholder="Your Greeting Name" />
+        <h3>Language</h3>
+        <select id="locale-select">
+            <option value="en-US">English</option>
+            <option value="de-DE">German</option>
+        </select>
+        <button id="save-settings">Save</button>
+        <hr>
+        <h3>Change Background</h3>
+        <input type="file" id="background-upload" accept="image/*">
+        <button id="reset-background">Reset to Default Background</button>
+        <hr>
+        <h3>Add Shortcut</h3>
+        <input type="text" id="shortcut-name" placeholder="Name" />
+        <input type="url" id="shortcut-url" placeholder="URL" />
+        <button id="add-shortcut">Add</button>
+        <hr>
+        <h3>Delete Shortcut</h3>
+        <div id="shortcut-list"></div>
+        <button id="close-settings">Close</button>
+    </div>
+
+    <script src="../src/js/time-and-date.js"></script>
+    <script src="../src/js/shortcuts.js"></script>
+    <script src="../src/js/daily-quotes.js"></script>
+    <script src="../src/js/background-handler.js"></script>
+    <script src="../src/js/animation-handler.js"></script>
+</body>
+</html>

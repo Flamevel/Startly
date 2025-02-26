@@ -1,0 +1,16 @@
+{
+    "en-US": [
+        "Good Evening",
+        "Good Morning",
+        "Good Noon",
+        "Good Afternoon",
+        "Good Evening"
+    ],
+    "de-DE": [
+        "Guten Abend",
+        "Guten Morgen",
+        "Guten Mittag",
+        "Guten Nachmittag",
+        "Guten Abend"
+    ]
+}

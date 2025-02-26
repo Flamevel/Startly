@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background: url('../../assets/images/extension/riccardo-trimeloni-unsplashBG.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+}
+
+.overlay {
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    max-width: 400px;
+}
+
+.time {
+    font-size: 5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.date {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.greeting {
+    margin: 50% 0 10px;
+    font-size: 2.75em;
+}
+
+.daily-qoutes {
+    font-size: 1.25em;
+    margin: 10px 0;
+}
+
+.weather {
+    font-size: 1.25em;
+    margin: 10px 0;
+}
+
+.weather-icon {
+    font-size: 2.5em;
+    margin-top: 10px;
+}
+
+.settings {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.settings:hover {
+    color: #ddd;
+}
+
+.shortcuts-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* background: rgba(0, 0, 0, 0.5); */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.shortcut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+.shortcut img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+}
+
+/* .shortcut:hover {
+    background: rgba(255, 255, 255, 0.1);
+} */
+
+/*Settings-panel | background: rgba(149, 149, 149, 0.262); */
+#settings-panel {
+    position: fixed;
+    top: 0;
+    right: -400px; 
+    width: 350px;
+    height: calc(100vh - 40px);
+    background: #ffffff; 
+    padding: 20px;
+    border-left: 3px solid #6c63ff;
+    color: #212121;
+    text-align: left;
+    overflow-y: auto; 
+    overflow-x: hidden;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1); 
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#settings-panel.active {
+    transform: translateX(-400px);
+}
+
+#settings-panel::-webkit-scrollbar {
+    width: 6px;
+}
+
+#settings-panel::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+#settings-panel h3 {
+    font-size: 1.5em;
+    color: #212121;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+#settings-panel input,
+#settings-panel select,
+#settings-panel button {
+    width: calc(100% - 24px);
+    padding: 12px;
+    background: #ecf0f1;
+    color: #212121;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+#settings-panel select {
+    width: 100%;
+}
+
+.settings-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+#settings-panel button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    color: white;
+    background: #6b63ffb1;
+}
+
+#settings-panel button:hover {
+    background: #6b63ffd6;
+}
+
+#save-settings {
+    background: #6c63ff;
+    color: white;
+    cursor: pointer;
+}
+
+#save-settings:hover {
+    background: #4b47e0;
+}
+
+#close-settings {
+    background: #6c63ff;
+}
+
+#close-settings:hover {
+    background: #4b47e0;
+}
+
+#background-upload {
+    width: 90%;
+    padding: 10px;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
