@@ -1,4 +1,4 @@
-# ![Startly Logo](src/views/favicon-32x32.png) Startly - A Chrome Extension
+# ![Startly Logo](views/favicon-32x32.png) Startly - A Chrome Extension
 
 Startly enhances your browsing experience by providing a visually appealing and functional new tab. It allows for personalization and quick access to frequently used sites through shortcuts. With future updates and suggestions, Startly will continue to improve your workflow.
 
@@ -54,10 +54,10 @@ Contributions are welcome! Feel free to fork this repository and submit pull req
 **Q: Can I request new features?**  
 A: Absolutely! Open an issue on GitHub with your request or join our community.
 
-**Q: Why should I use Startly?**
+**Q: Why should I use Startly?**  
 A: Startly is the ideal solution for users who find that the New Tab page lacks in terms of design and functionality. It was developed to provide enhanced features that improve the user experience and enhance ease of use as an extension.
 
-**Q: How does the Daily Quotes feature work?**
+**Q: How does the Daily Quotes feature work?**  
 A: Each day, Startly displays a new motivational quote based on your selected language. This helps to boost your productivity, inspiration and motivation. You can also add new ones by yourself in `src/data/quotes.json`, just follow the format.
 
 ## 💬 Feedback
