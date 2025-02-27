@@ -1,4 +1,4 @@
-# ![Startly Logo](views/favicon-32x32.png) Startly - A Chrome Extension
+# ![Startly Logo](views/startly-favicon-32x32.png) Startly - A Chrome Extension
 
 Startly enhances your browsing experience by providing a visually appealing and functional new tab. It allows for personalization and quick access to frequently used sites through shortcuts. With future updates and suggestions, Startly will continue to improve your workflow.
 
