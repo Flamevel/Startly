@@ -13,6 +13,7 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
+    --bg-image: url('../../assets/images/extension/riccardo-trimeloni-unsplashBG.jpg') no-repeat center center fixed;
     overflow: hidden;
     display: flex;
     align-items: flex-start;
@@ -26,10 +27,10 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../../assets/images/extension/riccardo-trimeloni-unsplashBG.jpg') no-repeat center center fixed;
+    background: var(--bg-image);
     background-size: cover;
-    filter: blur(20px);
-    -webkit-filter: blur(20px);
+    filter: blur(var(--blur-amount, 20px));
+    -webkit-filter: blur(var(--blur-amount, 20px));
     z-index: -1;
 }
 
