@@ -2,18 +2,40 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial;
-    background: url('../../assets/images/extension/riccardo-trimeloni-unsplashBG.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: 100vh;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     color: white;
-    backdrop-filter: blur(20px);
     overflow: hidden;
 }
 
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../../assets/images/extension/riccardo-trimeloni-unsplashBG.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+    z-index: -1;
+}
+
 .overlay {
+    position: relative; 
+    z-index: 1;
     border-radius: 15px;
     padding: 40px;
     text-align: center;
@@ -32,7 +54,7 @@ body {
 }
 
 .greeting {
-    margin: 50% 0 10px;
+    margin: 40% 0 10px;
     font-size: 2.75em;
 }
 
@@ -99,29 +121,29 @@ body {
     background: rgba(255, 255, 255, 0.1);
 } */
 
-/*Settings-panel | background: rgba(149, 149, 149, 0.262); */
+.settings svg {
+    pointer-events: none; /* Prevents interactions with the SVG */
+}
+
+/*Settings-panel | background: rgba(149, 149, 149, 0.262);  #ffffff */
 #settings-panel {
     position: fixed;
-    top: 0;
-    right: -400px; 
-    width: 350px;
-    height: calc(100vh - 40px);
-    background: #ffffff; 
+    top: 50%;
+    right: -400px;
+    transform: translateY(-50%);
+    width: 320px;
+    height: 90vh;
+    background: #ffffff;
+    border-radius: 15px 0 0 15px;
+    /* box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2); */
     padding: 20px;
-    border-left: 3px solid #6c63ff;
+    transition: right 0.4s ease-in-out;
     color: #212121;
-    text-align: left;
-    overflow-y: auto; 
-    overflow-x: hidden;
-    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1); 
-    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    overflow-y: auto;
 }
 
 #settings-panel.active {
-    transform: translateX(-400px);
+    right: 0;
 }
 
 #settings-panel::-webkit-scrollbar {
@@ -129,15 +151,14 @@ body {
 }
 
 #settings-panel::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.3);
     border-radius: 5px;
 }
 
 #settings-panel h3 {
-    font-size: 1.5em;
-    color: #212121;
-    margin-bottom: 5px;
-    text-align: left;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #333;
 }
 
 #settings-panel input,

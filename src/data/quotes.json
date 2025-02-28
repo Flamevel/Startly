@@ -141,7 +141,7 @@
     },
     {
         "en": "Difficulties in life are intended to make us better, not bitter.",
-        "de": "Schwierigkeiten im Leben sollen uns besser machen, nicht verbittert.",
+        "de": "Schwierigkeiten im Leben sollen uns besser machen, nicht verbittern.",
         "author": "Dan Reeves"
     },
     {
@@ -153,5 +153,10 @@
         "en": "We generate fears while we sit. We overcome them by action.",
         "de": "Wir erzeugen Ängste, während wir sitzen. Wir überwinden sie durch Handeln.",
         "author": "Dr. Henry Link"
+    },
+    {
+        "en": "You can change what you do, but you can’t change what you want.",
+        "de": "Man kann ändern, was man tut, aber man kann nicht ändern, was man will.",
+        "author": "Thomas Shelby"
     }
 ]

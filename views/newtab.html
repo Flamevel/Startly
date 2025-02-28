@@ -9,32 +9,39 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/startly-favicon-16x16.png">
 </head>
 <body>
-    <div class="overlay">
-        <p class="time" id="time">9:41</p>
-        <p class="date" id="date">Tuesday, June 4</p>
-        <p class="greeting" id="greeting">Good Afternoon</p>
-        <p class="daily-qoutes" id="daily-qoutes">Dreams come true one day. ~ Flamevel</p>
-        <!-- <p class="weather" id="weather">Partly Cloudy</p> -->
-        <!-- <p class="weather-icon" id="weather-icon">☁️ 23°</p> -->
-    </div>
+    <div class="background">
+        <div class="overlay">
+            <p class="time" id="time">9:41</p>
+            <p class="date" id="date">Tuesday, June 4</p>
+            <p class="greeting" id="greeting">Good Afternoon</p>
+            <p class="daily-qoutes" id="daily-qoutes">Dreams come true one day. ~ Flamevel</p>
+            <!-- <p class="weather" id="weather">Partly Cloudy</p> -->
+            <!-- <p class="weather-icon" id="weather-icon">☁️ 23°</p> -->
+        </div>
 
-    <div class="shortcuts-bar" id="shortcuts-bar"></div>
-    <div class="settings" id="settings-button">⚙️</div>
+        <div class="shortcuts-bar" id="shortcuts-bar"></div>
+        <div class="settings" id="settings-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></div>
+    </div>
 
     <div id="settings-panel">
         <h3>Personalized Greeting</h3>
         <input type="text" id="greeting-name" placeholder="Your Greeting Name" />
+
         <h3>Language</h3>
         <select id="locale-select">
             <option value="en-US">English</option>
-            <option value="de-DE">German</option>
+            <option value="de-DE">Deutsch</option>
         </select>
         <button id="save-settings">Save</button>
+
         <hr>
-        <h3>Change Background</h3>
+
+        <h3>Upload Wallpaper</h3>
         <input type="file" id="background-upload" accept="image/*">
-        <button id="reset-background">Reset to Default Background</button>
+        <button id="reset-background">Reset to Default Wallpaper</button>
+
         <hr>
+
         <h3>Add Shortcut</h3>
         <input type="text" id="shortcut-name" placeholder="Name" />
         <input type="url" id="shortcut-url" placeholder="URL" />
@@ -44,7 +51,7 @@
         <div id="shortcut-list"></div>
         <button id="close-settings">Close</button>
     </div>
-
+    
     <script src="../src/js/time-and-date.js"></script>
     <script src="../src/js/shortcuts.js"></script>
     <script src="../src/js/daily-quotes.js"></script>
